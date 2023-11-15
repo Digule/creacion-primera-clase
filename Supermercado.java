@@ -37,4 +37,13 @@ public class Supermercado{
             tiendaAbierta = false;
         }
     }
+    
+    public void imprimirDetalles(){
+        System.out.println("Propietario: " + propietario + " | " + "M2 del establecimiento: " + m2 + " | " + "Estado de la puerta: " + tiendaAbierta);
+    }
+    
+    public String contendidoEstado(){
+        String estado = "Propietario: " + propietario + " | " + "M2 del establecimiento: " + m2 + " | " + "Estado de la puerta: " + tiendaAbierta;
+        return estado;
+    }
 }
