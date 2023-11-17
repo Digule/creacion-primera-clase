@@ -17,7 +17,7 @@ public class Supermercado{
         return m2;
     }
     
-    public boolean getStadoTienda(){
+    public boolean getEstadoTienda(){
         return tiendaAbierta;
     }
     
@@ -39,11 +39,25 @@ public class Supermercado{
     }
     
     public void imprimirDetalles(){
-        System.out.println("Propietario: " + propietario + " | " + "M2 del establecimiento: " + m2 + " | " + "Estado de la puerta: " + tiendaAbierta);
+        String conversion;
+        if (tiendaAbierta == true){
+            conversion = "Abierto";
+        }
+        else{
+            conversion = "Cerrado";
+        }
+        System.out.println("Propietario: " + propietario + " | " + "M2 del establecimiento: " + m2 + " | " + "Estado de la puerta: " + conversion);
     }
     
     public String contendidoEstado(){
-        String estado = "Propietario: " + propietario + " | " + "M2 del establecimiento: " + m2 + " | " + "Estado de la puerta: " + tiendaAbierta;
+        String conversion;
+        if (tiendaAbierta == true){
+            conversion = "Abierto";
+        }
+        else{
+            conversion = "Cerrado";
+        }
+        String estado = "Propietario: " + propietario + " | " + "M2 del establecimiento: " + m2 + " | " + "Estado de la puerta: " + conversion;
         return estado;
     }
 }
